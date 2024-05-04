@@ -18,20 +18,24 @@ function player2 {
 
 # This function compares the inputs from the two players and then outputs the
 # result
+# Here r,p,s refers to as
+# r = rock
+# p = paper
+# s = scissors
 function compare {
   if [[ $player1 == $player2 ]]; then
     echo "Its a Tie"
-  elif [[ $player1 ==  "rock" && $player2 == "scissors" ]]; then
+  elif [[ $player1 ==  "r" && $player2 == "s" ]]; then
     echo "Player 1 Wins"
-  elif [[ $player1 == "sissors" && $player2 == "rock" ]]; then
+  elif [[ $player1 == "s" && $player2 == "r" ]]; then
     echo "Player 2 Wins"
-  elif [[ $player1 == "scissors" && $player2 == "paper" ]]; then
+  elif [[ $player1 == "s" && $player2 == "p" ]]; then
     echo "Player 1 Wins"
-  elif [[ $player1 == "paper" && $player2 == "scissors" ]]; then
+  elif [[ $player1 == "p" && $player2 == "s" ]]; then
     echo "Player 2 Wins"
-  elif [[ $player1 == "paper" && $player2 == "rock" ]]; then
+  elif [[ $player1 == "p" && $player2 == "r" ]]; then
     echo "Player 1 Wins"
-  elif [[ $player1 = "rock" && $player2 == "paper" ]]; then
+  elif [[ $player1 = "r" && $player2 == "p" ]]; then
     echo "Player 2 Wins"
   else
     echo "There was an error please try again"
