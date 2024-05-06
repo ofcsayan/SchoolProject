@@ -1,6 +1,6 @@
 """
-Snake Eater
-Made with PyGame
+Snake Game
+Made with PyGame & Python 
 """
 
 import pygame, sys, time, random
@@ -12,7 +12,7 @@ import pygame, sys, time, random
 # Hard      ->  40
 # Harder    ->  60
 # Impossible->  120
-difficulty = 10 
+difficulty = 10
 
 # Window size
 frame_size_x = 1080
@@ -30,7 +30,7 @@ else:
 
 
 # Initialise game window
-pygame.display.set_caption('Snake Eater')
+pygame.display.set_caption('Snake Game')
 game_window = pygame.display.set_mode((frame_size_x, frame_size_y))
 
 
